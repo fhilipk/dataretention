@@ -1,0 +1,69 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/******************************
+* Grid context
+*/
+/******************************
+ * Columns
+*/
+.flex {
+  display: flexbox; }
+
+div {
+  outline: 1px solid black;
+  height: 100px; }
+
+.main {
+  margin: 0;
+  padding: 0; }
+  .main::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .main > * {
+    padding: .25rem;
+    float: left; }
+
+.grid > div {
+  width: 25%;
+  /* Colour for illustration purpose - remove from final*/
+  background-color: gray; }
+
+.main > header {
+  width: 100%;
+  /* Colour for illustration purpose - remove from final*/
+  background-color: red; }
+
+.main > article {
+  width: 66.6666666%;
+  /* make the article a grid */
+  margin: 0;
+  padding: 0;
+  /* Colour for illustration purpose - remove from final*/
+  background-color: green; }
+  .main > article::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .main > article > * {
+    padding: .25rem;
+    float: left; }
+
+.main article > div {
+  width: 250px;
+  display: flex; }
+
+.main > aside {
+  width: 33.333333333%;
+  /* Colour for illustration purpose - remove from final*/
+  background-color: blue; }
+
+.main > footer {
+  width: 100%;
+  /* Colour for illustration purpose - remove from final*/
+  background-color: orange; }
+
+/*# sourceMappingURL=main.css.map */

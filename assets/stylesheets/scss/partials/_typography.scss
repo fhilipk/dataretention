@@ -1,0 +1,17 @@
+@font-face {
+	font-family: '';
+	src: url ('.../fonts/' );
+	src: url ('.../fonts/' );
+	font-weight: normal;
+	font-variant: normal;
+}
+
+body {
+	@font-face;
+}
+
+@font-styles {
+	html {
+		font-feature-settings: "liga" 1, "dlig" 1; 
+	}
+}

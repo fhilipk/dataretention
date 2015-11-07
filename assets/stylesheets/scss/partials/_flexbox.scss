@@ -1,0 +1,15 @@
+$display: flex;
+
+/* Horizontal side-by-side with elements verticaly and horizontaly centered */
+@mixin flex-row-center {
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Vertical stacked column with elements verticaly and horizontaly centered */
+@mixin flex-column-center {
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+}
